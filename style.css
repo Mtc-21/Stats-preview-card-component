@@ -1,0 +1,199 @@
+  @import url("https://fonts.google.com/specimen/Inter");
+    @import url("https://fonts.google.com/specimen/Lexend+Deca");
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: white;
+      width: 100%;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      height: 100%;
+      font-size: 15px;
+      background: hsl(233, 47%, 7%);
+      font-family: 'Lexend Deca', sans-serif;
+    }
+
+    body,
+    .content-text,
+    .details p {
+      display: flex;
+    }
+
+    body,
+    .details p {
+      flex-direction: column;
+    }
+
+    body,
+    .content-text {
+      justify-content: center;
+    }
+
+    body,
+    .content-text,
+    .details p {
+      align-items: center;
+    }
+
+    .content-text {
+      padding: 2rem 1rem 0 1rem;
+      flex-wrap: wrap;
+    }
+
+    .content-text>* {
+      width: 100%;
+    }
+
+    h1,
+    .description {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: calc(1rem + 1vw);
+    }
+
+    .description {
+      font-size: calc(0.5rem + 1vw);
+    }
+
+    strong {
+      font-size: calc(0.6rem + 1vw);
+    }
+
+    h1,
+    .details strong {
+      color: hsl(0, 0%, 100%);
+      font-weight: 700;
+    }
+
+    p {
+      line-height: 1.5;
+      color: hsla(0, 0%, 100%, 0.6);
+    }
+
+    p,
+    h1 {
+      padding-bottom: 1rem;
+    }
+
+    span {
+      color: hsl(277, 64%, 61%);
+    }
+
+    .details p {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      background: hsl(244, 38%, 16%);
+      margin: 1.5em;
+      border-radius: 0.5rem;
+      box-shadow: 0.5rem 0.5rem 0.5rem black
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    .content-img {
+      position: relative;
+    }
+
+    .content-img::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0.5;
+      background: hsl(277, 64%, 61%);
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    @media(min-width:347px) {
+      .content {
+        width: 300px;
+      }
+    }
+
+    @media(min-width:672px) {
+      .content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        width: auto;
+      }
+
+      .content-text {
+        order: -1;
+        padding: calc(2rem + 1vw);
+      }
+
+      .details {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .details p {
+        width: 33.3%;
+        align-items: flex-start;
+      }
+
+      h1,
+      .description {
+        text-align: left;
+      }
+
+      img {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+      }
+
+      .content-img::before {
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+      }
+    }
+
+    @media(min-width:1000px) {
+      .content-text {
+        padding: calc(3rem + 1vw);
+      }
+    }
+
+    @media(min-width:1200px) {
+      .content {
+        width: calc(70% - 1vw);
+      }
+
+      .description {
+        font-size: calc(0.1rem + 1vw);
+      }
+    }
