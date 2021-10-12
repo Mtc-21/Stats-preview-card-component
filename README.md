@@ -3,7 +3,7 @@ Solution to the [Stats preview card component](https://www.frontendmentor.io/cha
 #### Desktop Design:
 ![my-desktop-design](https://user-images.githubusercontent.com/71796360/136992763-4ab00643-5ec5-43fa-a90c-384f378c5bee.PNG)
 # Link
-Solution: [Github Page](https://mtc-21.github.io/Order-summary-component/)
+Solution: [Github Page](https://mtc-21.github.io/Stats-preview-card-component/)
 # Description
 created with html, css, using grid and flebox for the layout of the website 
 # Author
